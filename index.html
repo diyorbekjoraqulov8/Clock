@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="tabsPanel">
+        <!-- Tablar -->
+        <ul class="tabsLinks">
+            <li class="tabsItem active"><a href="#" class="tabsLink">Часы</a></li>
+            <li class="tabsItem">
+                <a href="#" class="tabsLink">Секундомер
+                    <!-- Sekundomer ishlayotganini bildirib turadi
+                    O`ziga ishlashini bildirayotgan active classini oladi
+                    active - sekundomer ishlayapti
+                    active_clear - Sekundomer toxtatilgan ammo malumot ochirilmagan
+                    -->
+                    <span class="tabsLink__span"></span>
+                </a>
+            </li>
+        </ul>
+        <!-- Tablar -->
+        <div class="tabsContent">
+            <!-- Ko`rsatkichli soat -->
+            <div class="clock tabsContentItem active">
+                <div class="arrowClock">
+                    <!-- Soat -->
+                    <div class="arrowClockNumber">
+                        <div class="arrowClockNumber__num arrowClockNumber__num_12">12</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_1"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_2"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_3">3</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_4"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_5"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_6">6</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_7"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_8"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_9">9</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_10"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_11"></div>
+                    </div>
+
+                    <!-- Ko`rsatkichlar  -->
+
+                    <div class="s"></div> <!-- soniya -->
+                    <div class="m"></div> <!-- daqiqa -->
+                    <div class="h"></div> <!-- soat -->
+                </div>
+                <div class="numberClock">
+                    <!-- Vaqtni son ko`rinishida chiqarish -->
+                    <div class="hours">00</div>
+                    <div class="minutes">00</div>
+                </div>
+            </div>
+            <!-- Uyga sekundomer -->
+            <!-- 
+
+            Vazifa: Rekursiya yordamida Date()siz ishlaydigan sekundomer yasash    
+
+             -->
+            <div class="stopwatch tabsContentItem ">
+                <div class="stopwatch__clock">
+
+                    <div class="stopwatch__clock-description">
+                        <!-- Soat -->
+                        <div class="stopwatch__hours">0</div>
+                        Час.
+                    </div>
+                    <div class="stopwatch__clock-description">
+                        <!-- Daqiqa -->
+                        <div class="stopwatch__minutes">0</div>
+                        Мин.
+                    </div>
+                    <div class="stopwatch__clock-description">
+                        <!-- Soniya -->
+                        <div class="stopwatch__seconds">0</div>
+                        Сек.
+                    </div>
+                </div>
+                <!-- Sekundomerni ishlatadigan tugma -->
+                <button class="stopwatch__btn">start</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
